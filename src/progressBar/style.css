@@ -1,0 +1,66 @@
+.container-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container-circle {
+  position: relative;
+}
+
+svg {
+  height: 300px;
+  width: 300px;
+  transform: rotate(-90deg);
+}
+
+.container-circle svg .bar {
+  fill: transparent;
+  stroke: #007eff;
+  stroke-width: 15;
+  stroke-linecap: round;
+}
+
+.container-circle svg .inner {
+  fill: transparent;
+  stroke: #c4c4c4;
+  stroke-width: 8;
+}
+
+.container-circle .counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 700;
+  color: #007eff;
+  font-family: sans-serif;
+}
+
+.button-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  background-color: #023d93;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+.button:hover {
+  transform: scale(1.08, 1.08);
+  transition: 0.3s;
+  color: #fff;
+}
